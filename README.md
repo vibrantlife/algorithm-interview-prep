@@ -1,6 +1,6 @@
 #What's this Repo About?
 
-A group of women decided to get together and support each other on the job hunt by studying algorithms and data structures together. Want to join us?
+A group of women decided to get together and support each other on the job hunt by studying algorithms and data structures together. Want to join us? Add your solution by following the directions below.
 
 #To add a solution for a question:
 - fork the repo
