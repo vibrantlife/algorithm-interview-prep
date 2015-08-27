@@ -10,3 +10,4 @@ A group of women decided to get together and support each other on the job hunt 
 
 #Resources
 - [WWC Meetup Resources](http://meetupresources.herokuapp.com/index.html)
+- [Common Front End Interview Questions](http://www.frontendjournal.com/most-common-technical-interview-question-for-frontend-developers/)
