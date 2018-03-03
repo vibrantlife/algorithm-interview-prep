@@ -17,7 +17,7 @@ function isMatch(str)
 			{
 				left.push(str[i]);
 			}
-			//if 
+			//if str[i] is right side match, remove from last item from array. If str[i] is !== to the match (map[last]) then return false
 			else if (str[i] === ')' || str[i] === ']' || str[i] === '}')
 			{
 				let last = left.pop();
@@ -29,16 +29,15 @@ function isMatch(str)
 				}
 			}
 	}
+	//if array has any remaining left hand matches then return false
 	if (left.length !== 0)
 	{
 		console.log('length false');
 		console.log(left)
 		return false;
 	}
-
+	//if str[i] passed all above assertions then return true;
 	return true;
-
-	console.log(last);
 }
 
 isMatch('(a[0]+b[2c[6]]) {24 + 53}')
