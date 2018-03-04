@@ -29,6 +29,7 @@ function binarySearch(arr, target)
 				start = mid + 1;
 			}
 		}
+		//if target does not equal current middle then return -1
 		return -1;
 }
 
