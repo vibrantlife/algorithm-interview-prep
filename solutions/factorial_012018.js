@@ -1,6 +1,8 @@
 function factorial(n)
 {
+
 	let sum = 1;
+	
 	for (var i = 1; i <=n; i++)
 	{
 		sum = sum * i;
