@@ -1,0 +1,71 @@
+function deletionDistance(str1, str2) {
+  // your code goes here
+  //if 2 empty strings return 0 
+ 
+  if (str1.length === 0 && str2.length === 0) return 0;
+  //if either str is 0 return length of longest string;
+  if (str1.length === 0 && str2.length >= 1 ) {
+      return str2.length;
+      }
+  if (str2.length === 0 && str1.length >= 1) {
+      return str1.length;
+  }
+  
+  //compare first letter of both strings 
+    //if they are the same remove the first letter from both strings 
+    //else remove letter from longest string and inc count++
+  
+  let longest = str1.length > str2.length ? str1 : str2;
+  let shortest = longest === str1 ? str2 : str1;
+  
+  if (str1[0] === str2[0]) {
+    let updatedStr1 = str1.slice(1);
+    let updatedStr2 = str2.slice(1);
+    
+    // eat, it -> 3
+   let count = deletionDistance(updatedStr1, updatedStr2); 
+    // result == 3, count == 0
+    return count;
+  }
+  else {
+    let updatedLongest = longest.slice(1);
+    let updatedCount = deletionDistance(updatedLongest, shortest);
+    updatedCount++
+    return updatedCount;
+  }
+}
+
+// dogfrog dofrog
+// d vs f
+
+//t(ime) (s)t(an)
+
+// '', 'd' -> 1
+
+// '', '' -> 0
+// '', 'another' -> 'another'.length
+// null,null-> 0
+// 'let', 'let' -> 0
+
+// 'a', 'b' a != b
+
+// dog fog, d != f => ??? deletionDistance('og', 'og')
+// og, fog
+// fog, og
+
+// heat, hit -> it, it : 1
+// heat, melao
+
+// heat, hit
+// deletionDistance(heat, hit) -> 1????
+// count = 0;
+//   deletionDistance(eat, it)
+//     count = 0;
+//     deletionDistance(at, it) -> 1
+//       count = 0;
+//       deletionDistance(t, it) -> 1
+//         count = 0;
+//         deletionDistance(t, t) -> 0
+//           deletionDistance('', '') -> 0
+//       count++;
+//       return count;

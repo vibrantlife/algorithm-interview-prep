@@ -10,6 +10,8 @@
 	2. The browsers checks the cache for a DNS record to find the corresponding IP adress of exampleurl.com
 		* DNS (Domain Name System) is a database with URLs and their IP addresses. The main purpose of the DNS is for human friendly navigation. 
 
+		my working hypothesis: my browser decides on a domain name server[DNS] (somehow), the DNS has a list of domain names and internet protocol [IP] addresses, it matches my request with that IP address, my request then goes to that IP address and if that address is valid, the server responds to that request with what it's been programmed to, in this case it sends an HTML document 
+
 * Explain the purpose of each of the HTTP request types when used with a RESTful web service 
 	* GET: retrieves data from the server 
 	* POST: Sends data to the server for a new entity. It is often used when uploading a file or submitting a completed web form. 
