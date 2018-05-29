@@ -14,6 +14,29 @@ On the final step, our array looks like [1, 3], so we'll pick 2 since the array 
 
 Input / Output
 
+Sample Output: [[1,3], 
+[3,10], 
+[2,5], 
+[1,4], 
+[1,1], 
+[2,3], 
+[2,4], 
+[3,10], 
+[7,8], 
+[2,2], 
+[2,4], 
+[2,2], 
+[1,7], 
+[1,1], 
+[5,8], 
+[2,2], 
+[2,3], 
+[4,9], 
+[2,10], 
+[3,4]];
+
+https://codefights.com/challenge/vvaEwn4NbpLYGMt5G
+
 [execution time limit] 4 seconds (js)
 
 [input] array.array.integer choices
